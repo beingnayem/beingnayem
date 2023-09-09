@@ -7,9 +7,7 @@
 
 <p align="left"> <a href="https://twitter.com/being_nayem" target="blank"><img src="https://img.shields.io/twitter/follow/being_nayem?logo=twitter&style=for-the-badge" alt="being_nayem" /></a> </p>
 
-- 🔭 I’m currently working on [LuminChat](https://github.com/antarnath/LuminChat)
-
-- 🎓 I’m currently Studying **Bachelor of Social Science, Major in Economics**
+- 🎓 I’m currently Studying **Bachelor of Science, Major in Software Engineering**
 
 - 👨‍💻 All of my projects are available at [https://nayem-sarwar-chowdhury.netlify.app/](https://nayem-sarwar-chowdhury.netlify.app/)
 
