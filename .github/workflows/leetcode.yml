@@ -2,35 +2,34 @@ name: Update LeetCode Stats
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Updates daily
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # This runs daily at midnight
+  workflow_dispatch:  # You can trigger it manually
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Fetch LeetCode Stats
-        uses: justjavac/leetcode-stats-card@latest
+        uses: jakevdp/leetcode-stats-card@latest
         with:
           username: beingnayem
           format: markdown
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update README
         run: |
           mv README.md README.backup.md
-          sed -e '/<!-- LEETCODE-STATS -->/{r leetcode.md' -e 'd}' README.backup.md > README.md
+          cat leetcode.md >> README.backup.md
+          mv README.backup.md README.md
           rm leetcode.md
 
-      - name: Commit Changes
+      - name: Commit changes
         run: |
           git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
+          git config user.email "actions@github.com"
           git add README.md
           git commit -m "Update LeetCode stats"
           git push
