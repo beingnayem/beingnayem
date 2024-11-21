@@ -11,8 +11,7 @@
 ### Codeforces
 ![Codeforces Stats](https://codeforces-readme-stats.vercel.app/api/card?username=being_nayem)
 
-### LeetCode
-[![KnlnKS's LeetCode stats](https://leetcode-stats-six.vercel.app/?username=beingnayem&theme=dark)](https://github.com/KnlnKS/leetcode-stats)
+<!-- LEETCODE-STATS -->
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=beingnayem&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true)<br/>
